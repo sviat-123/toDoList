@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="img/ToDoList.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <title>toDoList</title>
+</head>
+<body>
+  <div class="contener">
+    <h1 class="name">To-Do List</h1>
+    <form class="input-field">
+      <input type="text" name="name" placeholder="add new task">
+      <button type="submit" class="submit">
+        <img src="img/plus.svg" alt="plus" class="submit-icon">
+      </button>
+    </form>
+    <div class="sorting">
+      <button class="all">All</button>
+      <button class="complated">Complated</button>
+      <button class="pending">Pending</button>
+    </div>
+    <h2 class="info">My works</h2>
+    <ul class="task-list">
+      <li class="task">
+        <div class="task-info">
+          <input type="checkbox">
+          <span>Task 1</span>
+        </div>
+        <div class="changes">
+          <button class="edit">
+          <img src="img/pen.svg" alt="edit" class="edit-icon">
+        </button>
+        <button class="delete">
+          <img src="img/trash.svg" alt="trash" class="trash-icon">
+        </button>
+        </div> 
+      </li>
+    </ul>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
